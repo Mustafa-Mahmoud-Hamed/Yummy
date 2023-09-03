@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="./Image/logo (1).png" type="image/x-icon" />
+    <link rel="stylesheet" href="./Styel/all.min.css" />
+    <link rel="stylesheet" href="./Styel/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Styel/bootstrap.min.css.map"/>
+    <link rel="stylesheet" href="./Styel/style.css">
+  </head>
+  <body>
+    <div
+      class="loading position-fixed top-0 start-0 end-0 bottom-0 bg-black d-flex justify-content-center align-items-center "
+    >
+      <div class="loading-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="side-nav min-vh-100 position-fixed d-flex top-0">
+      <div
+        class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4"
+      >
+        <div class="nav-list">
+          <ul class="list-unstyled overflow-hidden">
+            <li
+              onclick=" displaySearch() "
+              class="py-2 position-relative cursor-pointer"
+            >
+              Search
+            </li>
+            <li
+              onclick="getCategories() "
+              class="py-2 position-relative cursor-pointer"
+            >
+              Categories
+            </li>
+            <li
+              onclick="getArea()"
+              class="py-2 position-relative cursor-pointer"
+            >
+              Area
+            </li>
+            <li
+              onclick="getIngredients()"
+              class="py-2 position-relative cursor-pointer"
+            >
+              Ingredients
+            </li>
+            <li
+              onclick="showContacts()"
+              class="py-2 position-relative cursor-pointer"
+            >
+              Contact Us
+            </li>
+          </ul>
+        </div>
+        <div class="nav-footer">
+          <div class="footer-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>
+              Copyright Â© 2019 All Rights
+              <br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="nav-header  d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
+      >
+        <img src="./Image/logo (1).png" alt="logo" />
+        <div class="open-close-nav">
+          <i
+            id="open"
+            class="fa-solid open-close-icon fa-2x fa-align-justify"
+          ></i>
+          <i onclick="coseNav()" id="close" class="fa-solid open-close-icon fa-2x fa-x d-none"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Search -->
+    <section>
+      <div id="searchContainer" class="container">
+        
+      </div>
+    </section>
+    <!-- Home -->
+    <section>
+      <div class="container ">
+        <div
+        class="loading-home position-fixed   d-flex justify-content-center align-items-center d-none "
+      >
+        <div class="loading-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+        <div id="home" class="row py-5 g-4">
+          
+        </div>
+      </div>
+    </section>
+
+    <script src="./Js/bootstrap.bundle.js"></script>
+    <script src="./Js/jquery-3.7.1.min.js"></script>
+    <script src="./Js/main.js"></script>
+  </body>
+</html>
